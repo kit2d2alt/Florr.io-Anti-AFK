@@ -1,5 +1,5 @@
 ## Made by $\color{#F5F5DC}{\textsf{kit2d2}}$
-$\color{#FFA500}{\textsf{IMPORTANT:}}$ Press \ to stop, or go to Command Prompt and do `ctrl+c`.
+$\color{#FFA500}{\textsf{IMPORTANT:}}$ Press = to stop, or go to Command Prompt and do `ctrl+c`.
 # $\color{#FF4500}{\textsf{Requirements}}$
 ## $\color{#6B8E23}{\textsf{Libraries}}$
 - $\color{#FFD43B}{\textsf{Pyautogui}}$
