@@ -31,7 +31,14 @@ pip install Pillow
 3. Install Pillow and Pyautogui (`pip install pyautogui keyboard`, `pip install Pillow`)
 **4.** Run `python anti-afk.py`. 
 
-*Note, the current version will gobble up your CPU since it scans per pixel, will change in the future*
+*This version still slightly gobbles up your cpu and isn't perfect*
+
+## Alternate Version
+(On Linux, Windows OS most likely works)
+- Open $\color{#306998}{\textsf{Pyt}}\color{#FFD43B}{\textsf{hon}}\$ in Command Prompt
+- Right click your file via File Explorer and select `Copy as path` (Ctrl+Shift+C)
+- Run the copied text, ex: `C:\>"C:\Users\Person\Desktop\click_colors.py"` (I ran `cd ../..` before in this example)
+*This should start the script, but alternatively you can run `python file.py`
 
 
 
