@@ -16,8 +16,15 @@ target_colors_rgb = [hex_to_rgb(color) for color in target_colors]
 def click_on_color(color):
     screen = pyautogui.screenshot()
     width, height = screen.size
-    for x in range(width):
-        for y in range(height):
+    step = 4  # pixel skip area
+    avoid_area = (100, 100, 300, 300)  
+    
+    for x in range(0, width, step):
+        for y in range(0, height, step):
+            # if ngz NA
+            if (avoid_area[0] <= x <= avoid_area[2] and avoid_area[1] <= y <= avoid_area[3]):
+                continue  # skips pixels
+            
             if screen.getpixel((x, y)) == color:
                 pyautogui.click(x, y)
                 return
@@ -27,11 +34,11 @@ try:
         for color in target_colors_rgb:
             click_on_color(color)
             time.sleep(0.01)
-            print("https://discord.gg/MqvmBu5tWa")
+            print("Scanning")
 
         if keyboard.is_pressed('='):
-            print("Script Stopping : https://discord.gg/MqvmBu5tWa")
+            print("Script Stopping : Join https://discord.gg/MqvmBu5tWa")
             break
 
 except KeyboardInterrupt:
-    print("Script terminated : https://discord.gg/MqvmBu5tWa")
+    print("Script terminated : Join https://discord.gg/MqvmBu5tWa")
